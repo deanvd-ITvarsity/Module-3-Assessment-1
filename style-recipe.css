@@ -1,0 +1,287 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.body-home {
+    background-image: url('images/background-01-port.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.body-meals {
+    background-image: url('images/background-02-port.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* ======HEADER====== */
+
+.header {
+    background-color: #2BAE66FF;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    position: fixed;
+    overflow: hidden;
+    text-align: center;
+}
+
+.header i {
+    padding: 5px 0px 0px 5px;
+    float: left;
+    font-size: 40px;
+    color: #FCF6F5FF;
+}
+
+.header img {
+    padding: 5px 25px 0px 5px;
+    width: 250px;
+}
+
+
+/* ======HOME-PAGE====== */
+
+
+/* ===HOME-PAGE-LOGO=== */
+
+#home-logo-img {
+    width: 50px;
+    display: block;
+    margin: auto;
+    padding: 25px 10px 10px 10px;
+}
+
+#home-logo-text {
+    width: auto;
+    display: block;
+    margin: auto;
+    padding: 25px;
+}
+
+
+/* === HOME-PAGE-MENU=== */
+
+.home-menu-item {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #2BAE66FF;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #FCF6F5FF;
+    border: 5px solid #2BAE66FF;
+    border-radius: 12px;
+    display: block;
+    margin: auto;
+    margin-bottom: 12px;
+    width: 80%;
+}
+
+.home-menu-item:hover {
+    background-color: #2BAE66FF;
+    color: #FCF6F5FF;
+    border: 5px solid #FCF6F5FF;
+}
+
+
+/* ======MEALS-PAGE====== */
+
+
+/* ===MEALS-PAGE-MENU=== */
+
+#meals {
+    padding-top: 50px;
+}
+
+.meals-list a {
+    text-decoration: none;
+}
+
+.meals-list-item {
+    background-color: #FCF6F5FF;
+    border: 5px solid #2BAE66FF;
+    border-radius: 12px;
+    margin: 10px;
+}
+
+.meals-list-item:hover {
+    border: 5px solid rgb(21, 97, 55);
+}
+
+.meals-list-item h1 {
+    color: #2BAE66FF;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.meals-list-item i {
+    float: right;
+    font-size: 50px;
+    padding-right: 10px;
+}
+
+.meals-list-item i:hover {
+    color: rgb(21, 97, 55);
+}
+
+.meals-list-item p {
+    color: #2BAE66FF;
+    font-size: 15px;
+    font-style: italic;
+    margin-top: -7px;
+    padding-left: 10px;
+}
+
+
+/* ======RECIPE-PAGE====== */
+
+
+/* ===RECIPE-DETAILS=== */
+
+#recipe {
+    padding: 60px;
+}
+
+.recipe-details img {
+    width: 100%;
+    border-radius: 10px;
+    border: 8px solid #2BAE66FF;
+}
+
+.recipe-details img:hover {
+    border: 8px solid rgb(21, 97, 55);
+}
+
+.recipe-details h1 {
+    font-size: 30px;
+    color: #2BAE66FF;
+    text-align: center;
+    border: 5px solid #2BAE66FF;
+    border-radius: 10px;
+    background-color: #FCF6F5FF;
+    margin: 10px 0 0 20px;
+    padding: 5px;
+}
+
+.recipe-details h1:hover {
+    color: #FCF6F5FF;
+    background-color: #2BAE66FF;
+    border: 5px solid rgb(21, 97, 55);
+}
+
+.recipe-details-ingredients h2 {
+    font-size: 25px;
+    text-align: left;
+    margin: 0 0 0 10px;
+    color: rgb(21, 97, 55);
+}
+
+.recipe-details-steps h2 {
+    font-size: 25px;
+    text-align: left;
+    margin: 20px 0 0 10px;
+    color: rgb(21, 97, 55);
+}
+
+.recipe-details-info {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.recipe-details-info p b {
+    color: rgb(21, 97, 55);
+}
+
+.recipe-details-info p {
+    color: #2BAE66FF;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.recipe-details-ingredients label {
+    line-height: 20px;
+    margin-left: 10px;
+    color: #2BAE66FF;
+}
+
+.recipe-details-ingredients label:hover {
+    color: rgb(21, 97, 55);
+}
+
+.recipe-details-ingredients p b {
+    color: rgb(21, 97, 55);
+}
+
+.recipe-details-steps ol {
+    padding-left: 28px;
+}
+
+.recipe-details-steps li {
+    color: #2BAE66FF;
+}
+
+.recipe-details-steps li:hover {
+    color: rgb(21, 97, 55);
+}
+
+.recipe-details-steps a {
+    color: rgb(21, 97, 55);
+}
+
+
+/* ======RESPONSIVE LAYOUT====== */
+
+@media only screen and (min-width: 600px) {
+    #meals {
+        width: 80%;
+        margin: auto;
+    }
+    #recipe {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width:1000px) {
+    #meals {
+        width: 60%;
+        margin: auto;
+    }
+    #recipe {
+        width: 60%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width:1500px) {
+    #meals {
+        width: 40%;
+        margin: auto;
+    }
+    #recipe {
+        width: 40%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width:720px) {
+    .body-home {
+        background-image: url('images/background-01-land.png');
+    }
+    .body-meals {
+        background-image: url('images/background-02-land.png');
+    }
+}
